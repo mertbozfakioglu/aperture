@@ -2,7 +2,8 @@ console.log("Hello World")
 var c = document.getElementById("myCanvas")
 c.addEventListener("mousedown", doMouseDown, false)
 c.addEventListener("mouseup", doMouseUp, false)
-
+c.addEventListener("touchstart", doMouseDown, false)
+c.addEventListener("touchend", doMouseUp, false)
 
 var ctx = c.getContext("2d")
 
